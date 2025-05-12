@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style/style.css">
+    <style>
+    .table-container {
+        max-width: 1300px;
+        margin: auto;
+        background-color: white;
+        padding: 24px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    </style>
 </head>
 <body>
 <!-- Navbar -->
@@ -17,25 +28,25 @@
            href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
            <i class="fa fa-bars"></i>
         </a>
-        <a class="w3-bar-item w3-button w3-padding-large">KATEGORI BARANG</a>
+        <a class="w3-bar-item w3-button w3-padding-large">BARANG</a>
     </div>
 </div>
 
-<!-- Judul -->
 <div class="judul">
-    <h1>Kategori Barang Rumah Konveksi</h1>
+    input
 </div>
 
 <!-- Tabel Kategori -->
-<div style="overflow-x:auto; max-width:1300px; margin:auto;">
-    <a class="tombol" href="">Kembali</a>
+<div class="table-container">
+<h3>Kategori Barang</h3>
+<div style="overflow-x:auto; max-width:1400px; margin:auto;">
+    <a class="tombol" href="../from/from_barang.php">Kembali</a>
     <a class="tombol" href="../from/from_kategori.php">Tambah Data Baru</a>
     <br/><br/>
 
-    <h3>Data Kategori</h3>
     <table id="myTable" class="display">
         <thead>
-            <tr>
+            <tr class="w3-black">
                 <th>No</th>
                 <th>Nama Kategori</th>
                 <th>Opsi</th>
@@ -54,7 +65,6 @@
                     <td>
                         <a class="edit" href="../from/from_kategori.php?ubah=<?= $data['id_kategori']; ?>">Edit</a>
                         <a class="hapus" href="../fungsi/kategori/proses.php?hapus=<?= $data['id_kategori']; ?>" 
-                        class="btn btn-danger mb-1"
                         onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
                     </td>
             </tr>
@@ -74,5 +84,7 @@
     });
 </script>
 
+
+</div>
 </body>
 </html>

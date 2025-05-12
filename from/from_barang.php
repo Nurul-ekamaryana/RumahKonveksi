@@ -84,12 +84,12 @@ if (isset($_GET['ubah'])) {
         </select>
         <br>
             <?php if (isset($_GET['ubah'])): ?>
-                <button type="submit" name="aksi" value="edit" class="w3-button w3-blue w3-margin-right">Simpan Perubahan</button>
+                <button type="submit" name="aksi" value="edit" class="w3-button w3-blue w3-margin-right">Input</button>
             <?php else: ?>
                 <button type="submit" name="aksi" value="add" class="w3-button w3-blue w3-margin-right">Input</button>
             <?php endif; ?>
             <a href="../page/barang.php" class="w3-button w3-red">Kembali</a>
-    
+            <a class="w3-button w3-green" href="../page/kategori.php" style="margin-left: 198px;">Tambah Kategori Baru</a>   
     </form>
 </div>
 
