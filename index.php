@@ -1,16 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
+<title>Apk Rumah KOnveksi</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+<link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
 
@@ -22,7 +20,9 @@ body {font-family: "Lato", sans-serif}
     <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
     <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a href="page/kategori.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
+    <a href="from /login.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
     </div>
   </div>
 </div>
+</body>
+</html>

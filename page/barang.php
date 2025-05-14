@@ -1,6 +1,11 @@
 <?php
+session_start();
+if(!isset($_SESSION['user'])){
+    header('location:../from/login.php');
+}
+?>
+<?php
     include '../koneksi.php';
-
     // Menggabungkan data barang dengan nama kategori
     $query = "SELECT barang.*, kategori.nama_kategori 
               FROM barang 
@@ -14,7 +19,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>W3.CSS Template</title>
+    <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -36,8 +41,7 @@
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" 
-           href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
            <i class="fa fa-bars"></i>
         </a>
         <a class="w3-bar-item w3-button w3-padding-large">BARANG</a>
@@ -45,16 +49,16 @@
 </div>
 
 <div class="judul">
-    input
+    haloo, User
 </div>
 
 <!-- Tabel Kategori -->
 <div class="table-container">
 <h3>Data Barang</h3>
 <div style="overflow-x:auto; max-width:1400px; margin:auto;">
-    <a class="tombol" href="">Kembali</a>
-    <a class="tombol" href="../from/from_barang.php">Tambah Data Baru</a>
-    <a class="tombol" href="pesan.php">Buat pesanan</a>
+    <a class="w3-button w3-red w3-margin-right" href="../fungsi/logout.php" onclick="return confirm('Apakah Anda yakin ingin keluar?')">Logout</a>
+    <a class="w3-button w3-blue w3-margin-right" href="../from/from_barang.php">Tambah Data Baru</a>
+    <a class="w3-button w3-green w3-margin-right" href="pesan.php">Buat pesanan</a>
     <br/><br/>
 
     <table id="myTable" class="display">

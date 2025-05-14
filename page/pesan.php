@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>W3.CSS Template</title>
+    <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -17,7 +17,6 @@
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-
     </style>
 </head>
 <body>
@@ -40,8 +39,8 @@
 <div class="table-container">
 <h3>Pesanan Kamu</h3>
 <div style="overflow-x:auto; max-width:1400px; margin:auto;">
-    <a class="tombol" href="../from/from_barang.php">Kembali</a>
-    <a class="tombol" href="../from/from_pesan.php">Tambah Data Baru</a>
+    <a class="w3-button w3-red w3-margin-right" href="../page/barang.php">Kembali</a>
+    <a class="w3-button w3-blue w3-margin-right" href="">Tambah Data Baru</a>
     <br/><br/>
 
     <table id="myTable" class="display">
