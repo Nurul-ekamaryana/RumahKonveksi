@@ -1,28 +1,78 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Apk Rumah KOnveksi</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../style/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Page Example</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1400px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .text-section {
+      max-width: 600px;
+    }
+
+    .text-section h1 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .text-section p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .btn-signup {
+      background-color:rgb(59, 45, 255);
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .image-section img {
+      max-width: 450px;
+      height: auto;
+      user-select: none;
+    }
+
+  </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <a href="from /login.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
+<nav class="navbar">
+    <div class="brand">WELCOME</div>
+    <ul>
+      <a href="from/login.php"">Login</a>
+    </ul>
+</nav>
+
+  <div class="container">
+    <div class="text-section">
+      <h1>Selamat datang diRumah bunga dan inspirasi!</h1>
+      <p>Temukan rangkaian bunga segar dan desain yang menginspirasi untuk setiap momen spesialmu.</p>
+      <a href="from/register.php" class="btn-signup">Sign up</a>
+    </div>
+    <div class="image-section">
+      <img src="w3images/Desain Tanpa Judul.png" alt="Illustration" />
     </div>
   </div>
-</div>
+
 </body>
 </html>

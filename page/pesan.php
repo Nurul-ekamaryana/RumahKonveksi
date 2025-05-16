@@ -4,33 +4,27 @@
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style.css">
 
 </head>
 <body>
 <!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item  w3-padding-large">BARANG</a>
-    </div>
-</div>
-
-<div class="judul">
-    input
-</div>
+<nav class="navbar">
+    <div class="brand">WELCOME</div>
+    <ul>
+      <a href="../fungsi/logout.php" onclick="return confirm('Apakah Anda yakin ingin keluar?')">Logout</a>
+    </ul>
+</nav>
 
 <!-- Tabel Kategori -->
 <div class="table-container">
 <h3>Pesanan Kamu</h3>
 <div style="overflow-x:auto; max-width:1400px; margin:auto;">
-    <a class="w3-button w3-red w3-margin-right" href="../page/barang.php">Kembali</a>
-    <a class="w3-button w3-blue w3-margin-right" href="../from/from_pesan.php">Tambah Data Baru</a>
+    <a class="btn btn-red" href="../page/barang.php">Kembali</a>
+    <a class="btn btn-blue" href="../from/from_pesan.php">Tambah Data Baru</a>
     <br/><br/>
 
-    <table id="myTable" class="display">
+    <table id="myTable">
     <thead>
         <tr class="w3-black">
             <th>No</th>
@@ -82,7 +76,7 @@
             <td><?php echo $data['created_at']; ?></td>
             <td>
                 <!-- <a class="edit" href="../from/from_pesan.php?ubah=<?= $data['id_pesan']; ?>">Edit</a> -->
-                <a class="hapus" href="..?hapus=<?= $data['id_pesan']; ?>" 
+                <a class="btn btn-red" href="..?hapus=<?= $data['id_pesan']; ?>" 
                    onclick="return confirm('Apakah Anda yakin ingin Konfirmasi data ini?')">Hapus</a>
             </td>
         </tr>

@@ -12,27 +12,8 @@ include '../koneksi.php';
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css"> <!-- Pastikan path-nya sesuai -->
-    <style>
-    .form-input {
-    width: 96%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px; 
-    }
-    .login-button {
-    margin-top: 20px;
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    }
-    
-    </style>
 </head>
-<body>
+<body class="btn-blue">
     <?php 
 
     if(isset($_POST['nama'])){
@@ -50,25 +31,29 @@ include '../koneksi.php';
     }
 
     ?>
-    <div class="form-container">
-        <h2 class="judul">START YOUR FLOWER</h2>
-        <form method="post">
-            <label for="nama" class="form-label">Nama/Username</label>
-            <input required type="text" name="nama" id="nama" class="form-input" placeholder="Masukkan nama">
+    <div class="log">
+        <center><h2 class="text-section">Haloo,</h2>
+        <h3>datapkan pengalan menyenangkan</h3></center>
+            <form method="post">
+                <label for="nama" class="form-label">Nama/Username</label>
+                <input required type="text" name="nama" id="nama" class="form-input" placeholder="Masukkan nama">
 
-            <label for="password" class="form-label">Password</label>
-            <input required type="text" name="password" id="password" class="form-input" placeholder="Masukkan password">
-            
-            <label for="no_telp" class="form-label">No Telp</label>
-            <input required type="text" name="no_telp" id="no_telp" class="form-input" placeholder="Masukkan No Telp">
+                <label for="password" class="form-label">Password</label>
+                <input required type="text" name="password" id="password" class="form-input" placeholder="Masukkan password">
+                
+                <label for="no_telp" class="form-label">No Telp</label>
+                <input required type="text" name="no_telp" id="no_telp" class="form-input" placeholder="Masukkan No Telp">
 
-            <label for="alamat" class="form-label">Alamat</label>
-            <input required type="text" name="alamat" id="alamat" class="form-input" placeholder="Masukkan Alamat">
+                <label for="alamat" class="form-label">Alamat</label>
+                <input required type="text" name="alamat" id="alamat" class="form-input" placeholder="Masukkan Alamat">
 
-            <button type="submit" class="login-button">Buat Akun</button>
-            <hr>
-            <a href="login.php" style="display: block; text-align: center;">Login Now</a>
-        </form>
+                <button type="submit" class="login-button">Buat Akun</button>
+                            <br>
+                <br>
+                <hr>
+                <br>
+                <a href="login.php" style="display: block; text-align: center;">Login Now</a>
+            </form>
     </div>
 </body>
 </html>

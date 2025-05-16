@@ -13,27 +13,24 @@ if(!isset($_SESSION['user'])){
 
     $sql = mysqli_query($conn, $query);
     $no = 0;
-?>'
-
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style.css">
 
 </head>
 <body>
 <!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-padding-large">BARANG</a>
-    </div>
-</div>
+<nav class="navbar">
+    <div class="brand">WELCOME</div>
+    <ul>
+      <a href="../fungsi/logout.php" onclick="return confirm('Apakah Anda yakin ingin keluar?')">Logout</a>
+    </ul>
+</nav>
 
 <!-- <div class="judul">
     haloo, User
@@ -43,12 +40,12 @@ if(!isset($_SESSION['user'])){
 <div class="table-container">
 <h3>Data Barang</h3>
 <div style="overflow-x:auto; max-width:1400px; margin:auto;">
-    <a class="w3-button w3-red w3-margin-right" href="../fungsi/logout.php" onclick="return confirm('Apakah Anda yakin ingin keluar?')">Logout</a>
-    <a class="w3-button w3-blue w3-margin-right" href="../from/from_barang.php">Tambah Data Baru</a>
-    <a class="w3-button w3-green w3-margin-right" href="pesan.php">Buat pesanan</a>
+    <!-- <a class="w3-button w3-red w3-margin-right" href="../fungsi/logout.php" onclick="return confirm('Apakah Anda yakin ingin keluar?')">Logout</a> -->
+    <a class="btn btn-blue" href="../from/from_barang.php">Tambah Data Baru</a>
+    <a class="btn btn-green" href="pesan.php">Buat pesanan</a>
     <br/><br/>
 
-    <table id="myTable" class="display">
+    <table id="myTable">
         <thead>
             <tr class="w3-black">
                 <th>No</th>
@@ -81,11 +78,11 @@ if(!isset($_SESSION['user'])){
                         </td>
                         <td>
                             <a href="../fungsi/barang/proses.php?hapus=<?= $result['id_barang']; ?>" 
-                            class="hapus"
+                            class="btn btn-red"
                             onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
                             
                             <a href="../from/from_barang.php?ubah=<?= $result['id_barang']; ?>" 
-                            class="edit">Edit</a>
+                            class="btn btn-green">Edit</a>
                         </td>
                     </tr>
                     <?php } ?>

@@ -1,7 +1,6 @@
 <?php
 session_start();
 include '../koneksi.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -12,30 +11,9 @@ include '../koneksi.php';
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css"> <!-- Pastikan path-nya sesuai -->
-    <style>
-        .form-input {
-    width: 96%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px; 
-    }
-    .login-button {
-    margin-top: 20px;
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    }
-    
-    </style>
 </head>
-<body>
+<body class="btn-blue">
     <?php 
-      include '../koneksi.php';
-      
       if (isset($_POST['nama'])) {
           $nama = $_POST['nama'];
           $password = md5($_POST['password']);
@@ -52,8 +30,9 @@ include '../koneksi.php';
           }
       }
     ?>
-    <div class="form-container">
-        <h2 class="judul">START YOUR FLOWER</h2>
+    <div class="log">
+        <center><h2 class="text-section">Haloo,</h2>
+        <h3>datapkan pengalan menyenangkan</h3></center>
         <form method="post">
             <label for="nama" class="form-label">Nama/Username</label>
             <input required type="text" name="nama" id="nama" class="form-input" placeholder="Masukkan nama">
@@ -62,8 +41,11 @@ include '../koneksi.php';
             <input required type="password" name="password" id="password" class="form-input" placeholder="Masukkan password">
 
             <button type="submit" class="login-button">Login</button>
+            <br>
+            <br>
             <hr>
-            <a href="register.php" style="display: block; text-align: center;">Buat Akun</a>
+            <br>
+            <a href="register.php" style="display: block; text-align: center; color: blue;">Buat Akun</a>
         </form>
     </div>
 </body>

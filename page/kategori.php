@@ -4,36 +4,27 @@
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" 
-           href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
-           <i class="fa fa-bars"></i>
-        </a>
-        <a class="w3-bar-item  w3-padding-large">BARANG</a>
-    </div>
-</div>
+<nav class="navbar">
+    <div class="brand">WELCOME</div>
+    <ul>
+      <a href="../fungsi/logout.php" onclick="return confirm('Apakah Anda yakin ingin keluar?')">Logout</a>
+    </ul>
+</nav>
 
-<div class="judul">
-    input
-</div>
 
 <!-- Tabel Kategori -->
 <div class="table-container">
 <h3>Kategori Barang</h3>
 <div style="overflow-x:auto; max-width:1400px; margin:auto;">
-    <a class="w3-button w3-red w3-margin-right" href="../from/from_barang.php">Kembali</a>
-    <a class="w3-button w3-blue w3-margin-right" href="../from/from_kategori.php">Tambah Data Baru</a>
+    <a class="btn btn-red" href="../from/from_barang.php">Kembali</a>
+    <a class="btn btn-blue" href="../from/from_kategori.php">Tambah Data Baru</a>
     <br/><br/>
 
-    <table id="myTable" class="display">
+    <table id="myTable">
         <thead>
             <tr class="w3-black">
                 <th>No</th>
@@ -52,8 +43,8 @@
                 <td><?php echo $nomor++; ?></td>
                 <td><?php echo $data['nama_kategori']; ?></td>
                     <td>
-                        <a class="edit" href="../from/from_kategori.php?ubah=<?= $data['id_kategori']; ?>">Edit</a>
-                        <a class="hapus" href="../fungsi/kategori/proses.php?hapus=<?= $data['id_kategori']; ?>" 
+                        <a class="btn btn-green" href="../from/from_kategori.php?ubah=<?= $data['id_kategori']; ?>">Edit</a>
+                        <a class="btn btn-red" href="../fungsi/kategori/proses.php?hapus=<?= $data['id_kategori']; ?>" 
                         onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
                     </td>
             </tr>
