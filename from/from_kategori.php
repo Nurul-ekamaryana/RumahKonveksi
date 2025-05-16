@@ -24,14 +24,14 @@ if (isset($_GET['ubah'])) {
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
-        <a class="w3-bar-item w3-button w3-padding-large">KATEGORI BARANG</a>
+        <a class="w3-bar-item w3-padding-large">KATEGORI BARANG</a>
     </div>
 </div>
 

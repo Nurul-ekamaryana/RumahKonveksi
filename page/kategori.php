@@ -7,18 +7,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../style/style.css">
-    <style>
-    .table-container {
-        max-width: 1300px;
-        margin: auto;
-        background-color: white;
-        padding: 24px;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    </style>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <!-- Navbar -->
@@ -28,7 +17,7 @@
            href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
            <i class="fa fa-bars"></i>
         </a>
-        <a class="w3-bar-item w3-button w3-padding-large">BARANG</a>
+        <a class="w3-bar-item  w3-padding-large">BARANG</a>
     </div>
 </div>
 

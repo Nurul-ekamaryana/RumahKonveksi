@@ -11,9 +11,9 @@ include '../koneksi.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style/style.css"> <!-- Pastikan path-nya sesuai -->
+    <link rel="stylesheet" href="../style.css"> <!-- Pastikan path-nya sesuai -->
     <style>
-        .form-input {
+    .form-input {
     width: 96%;
     padding: 10px;
     border: 1px solid #ccc;
